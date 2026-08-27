@@ -16,7 +16,7 @@ const matches=[
 
 export default function App(){
  const [tab,setTab]=useState("Dashboard"),[mobile,setMobile]=useState(false),[notice,setNotice]=useState("");
- const nav = [
+const nav = [
   { name: "Dashboard", icon: Home },
   { name: "Players", icon: Users },
   { name: "Rounds", icon: Flag },

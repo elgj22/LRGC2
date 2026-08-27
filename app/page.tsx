@@ -16,7 +16,16 @@ const matches=[
 
 export default function App(){
  const [tab,setTab]=useState("Dashboard"),[mobile,setMobile]=useState(false),[notice,setNotice]=useState("");
- const nav=[["Dashboard",Home],["Players",Users],["Rounds",Flag],["Matches",Trophy],["Schedule",CalendarDays],["Settlements",WalletCards],["Notifications",Bell],["Settings",Settings]];
+ const nav = [
+  { name: "Dashboard", icon: Home },
+  { name: "Players", icon: Users },
+  { name: "Rounds", icon: Flag },
+  { name: "Matches", icon: Trophy },
+  { name: "Schedule", icon: CalendarDays },
+  { name: "Settlements", icon: WalletCards },
+  { name: "Notifications", icon: Bell },
+  { name: "Settings", icon: Settings },
+];
  const send=()=>{setNotice("Notification sent to all players.");setTimeout(()=>setNotice(""),2500)};
  return <div className="shell">
   <aside className={mobile?"side open":"side"}>

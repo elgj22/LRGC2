@@ -30,7 +30,7 @@ export default function App(){
  return <div className="shell">
   <aside className={mobile?"side open":"side"}>
    <div className="brand"><div className="logo">⛳</div><div><b>Golf Trip</b><span>Scottsdale Cup 2026</span></div><button className="close" onClick={()=>setMobile(false)}><X size={20}/></button></div>
-   <nav>
+<nav>
   {nav.map(({name, icon: I}) =>
     <button
       className={tab === name ? "nav active" : "nav"}
